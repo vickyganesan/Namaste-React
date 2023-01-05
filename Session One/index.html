@@ -1,44 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>React Basic </title>
-</head>
-
-<body>
-   
-    <!-- create ROOT -->
-    
-    <div id="root">  </div>
-
-    <!-- create ROOT -->
-
-
-</body>
-
-     <!-- CDN of React  -->
-     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
-
-    <!-- React Code -->
-
-    <script>
-
-    const root = ReactDOM.createRoot(document.getElementById("root"));
-    
-    //Creating an element without JSX 
-    
-    const title = React.createElement("h1", {id: "title-topic",className: "course-title"}, "Namaste React Bootcamp");
-    const titleTwo = React.createElement("h3", { id: "topic" }, "Session One Inception");
-    const containerDiv = React.createElement("div", { id:"container" },[title, titleTwo]);
-    root.render(containerDiv);
-    </script>
-
-    <!-- React Code -->
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>React Basic</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="./app.js" type="module" />
+  </body>
 </html>
